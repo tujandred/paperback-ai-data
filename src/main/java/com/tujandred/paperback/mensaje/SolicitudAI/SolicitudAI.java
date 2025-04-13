@@ -1,7 +1,7 @@
-package SolicitudAI;
+package com.tujandred.paperback.mensaje.SolicitudAI;
 
 import lombok.Getter;
-import mensaje.MensajeAI;
+import com.tujandred.paperback.mensaje.MensajeAI;
 
 import java.util.ArrayList;
 import java.util.List;

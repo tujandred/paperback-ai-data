@@ -1,7 +1,7 @@
-package mensaje.mensajes;
+package com.tujandred.paperback.mensaje.mensajes;
 
-import mensaje.MensajeAI;
-import mensaje.TipoMensajeAI;
+import com.tujandred.paperback.mensaje.MensajeAI;
+import com.tujandred.paperback.mensaje.TipoMensajeAI;
 
 public class MensajeInstrucciones extends MensajeAI {
 

@@ -1,4 +1,4 @@
-package mensaje;
+package com.tujandred.paperback.mensaje;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
