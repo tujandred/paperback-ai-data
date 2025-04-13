@@ -10,4 +10,5 @@ import java.time.Instant;
 public class MensajeAI {
     String texto;
     Instant timeStamp;
+    //Comentario de prueba para forzar el refresco
 }
