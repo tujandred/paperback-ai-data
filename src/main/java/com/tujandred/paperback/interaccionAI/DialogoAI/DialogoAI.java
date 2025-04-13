@@ -19,7 +19,7 @@ public class DialogoAI {
     @Getter
     private ListaMensajes mensajes = new ListaMensajes();
 
-    private ListaMensajes getTodosMensajes() {
+    public ListaMensajes getTodosMensajes() {
         return ListaMensajes.concatenar(instrucciones, mensajes);
     }
 }
