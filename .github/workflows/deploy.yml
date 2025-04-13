@@ -33,5 +33,5 @@ jobs:
           OSSRH_PASSWORD: ${{ secrets.OSSRH_PASSWORD }}
         run: |
           export GPG_TTY=$(tty)
-          cho $GPG_PRIVATE_KEY | base64 --decode | gpg --batch --import
+          echo $GPG_PRIVATE_KEY | base64 --decode | gpg --batch --import
           mvn clean deploy -P release
