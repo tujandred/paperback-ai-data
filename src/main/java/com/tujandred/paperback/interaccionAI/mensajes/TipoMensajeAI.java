@@ -1,4 +1,4 @@
-package com.tujandred.paperback.mensaje;
+package com.tujandred.paperback.interaccionAI.mensajes;
 
 public enum TipoMensajeAI {
     SYSTEM, TOOL, USER, ASSISTANT;

@@ -1,4 +1,4 @@
-package com.tujandred.paperback.mensaje;
+package com.tujandred.paperback.interaccionAI.mensajes;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -35,6 +35,6 @@ public class MensajeAI {
     public int hashCode() {
         return uuid.hashCode();
     }
-    // Prueba
+
 
 }
