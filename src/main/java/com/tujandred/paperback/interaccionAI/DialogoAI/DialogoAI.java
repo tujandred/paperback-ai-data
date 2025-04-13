@@ -22,4 +22,5 @@ public class DialogoAI {
     public ListaMensajes getTodosMensajes() {
         return ListaMensajes.concatenar(instrucciones, mensajes);
     }
+    //
 }
