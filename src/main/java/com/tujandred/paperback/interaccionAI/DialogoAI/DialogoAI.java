@@ -14,13 +14,15 @@ import java.util.UUID;
 public class DialogoAI {
 
     @Getter
-    private ListaMensajes instrucciones = new ListaMensajes();
+    private List<MensajeAI> instrucciones = new ArrayList<>();
 
     @Getter
-    private ListaMensajes mensajes = new ListaMensajes();
+    private List<MensajeAI> mensajes = new ArrayList<>();
 
-    public ListaMensajes getTodosMensajes() {
-        return ListaMensajes.concatenar(instrucciones, mensajes);
+    public List<MensajeAI> getTodosMensajes() {
+        var res = new ArrayList<>(instrucciones);
+        res.addAll(mensajes);
+        return res;
     }
     //
 }
