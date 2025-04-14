@@ -2,12 +2,14 @@ package com.tujandred.paperback.interaccionAI.mensajes;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 import java.util.UUID;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class MensajeAI {
     UUID uuid = UUID.randomUUID();
     TipoMensajeAI tipo;
