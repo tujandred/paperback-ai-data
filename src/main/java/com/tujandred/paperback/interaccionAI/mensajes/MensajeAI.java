@@ -1,5 +1,7 @@
 package com.tujandred.paperback.interaccionAI.mensajes;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,7 +18,8 @@ public class MensajeAI {
     String texto;
     Instant timeStamp = Instant.now();
 
-    public MensajeAI(TipoMensajeAI tipo, String texto) {
+    @JsonCreator
+    public MensajeAI(@JsonProperty("tipo") TipoMensajeAI tipo, @JsonProperty("texto") String texto) {
         this.tipo = tipo;
         this.texto = texto;
         uuid = UUID.randomUUID();
