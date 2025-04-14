@@ -6,7 +6,7 @@
 
     <groupId>com.github.tujandred</groupId>
     <artifactId>paperback-ai-data</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>jar</packaging>
     <name>Paperback AI Data</name>
     <description>Librería de datos para Paperback AI. Se utiliza para la comunicación</description>

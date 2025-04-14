@@ -13,9 +13,17 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class MensajeAI {
+    @lombok.Getter(onMethod_ = {@JsonProperty("uuid")})
+    @lombok.Setter(onMethod_ = {@JsonProperty("uuid")})
     UUID uuid = UUID.randomUUID();
+    @lombok.Getter(onMethod_ = {@JsonProperty("tipo")})
+    @lombok.Setter(onMethod_ = {@JsonProperty("tipo")})
     TipoMensajeAI tipo;
+    @lombok.Getter(onMethod_ = {@JsonProperty("texto")})
+    @lombok.Setter(onMethod_ = {@JsonProperty("texto")})
     String texto;
+    @lombok.Getter(onMethod_ = {@JsonProperty("timeStamp")})
+    @lombok.Setter(onMethod_ = {@JsonProperty("timeStamp")})
     Instant timeStamp = Instant.now();
 
     @JsonCreator

@@ -1,22 +1,22 @@
 package com.tujandred.paperback.interaccionAI.DialogoAI;
 
-import com.tujandred.paperback.interaccionAI.listaMensajes.ListaMensajes;
-import com.tujandred.paperback.interaccionAI.mensajes.MensajeInstrucciones;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import com.tujandred.paperback.interaccionAI.mensajes.MensajeAI;
+import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
-import java.util.UUID;
 
 
 public class DialogoAI {
 
-    @Getter
+    @Getter(onMethod_ = {@JsonProperty("instrucciones")})
+    @Setter(onMethod_ = {@JsonProperty("instrucciones")})
     private List<MensajeAI> instrucciones = new ArrayList<>();
 
-    @Getter
+    @Getter(onMethod_ = {@JsonProperty("mensajes")})
+    @Setter(onMethod_ = {@JsonProperty("mensajes")})
     private List<MensajeAI> mensajes = new ArrayList<>();
 
     public List<MensajeAI> getTodosMensajes() {
